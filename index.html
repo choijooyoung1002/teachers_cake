@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>사이버 케이크</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="선생님 생신 축하드립니다!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="poster.png" />
+    <meta property="og:title" content="사이버 케이크" />
+    <meta property="og:descriptoin" content="선생님 생신 축하드립니다!" />
+    <meta name="" />
+    <link type="text/css" href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script
+      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer
+      bounds="tight"
+      src="cacke.glb"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      environment-image="neutral"
+      poster="poster.png"
+      shadow-intensity="1"
+      animation-name="Curve.016Action.001"
+      autoplay
+    >
+      <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">View in your space</button>
+      <div id="ar-prompt">
+        <img src="ar_hand_prompt.png" />
+      </div>
+      <div id="box">
+        <p id="title">사이버 케이크</p>
+        <p>캐릭터 디자인 : 황시윤</p>
+      </div>
+    </model-viewer>
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </body>
+</html>
